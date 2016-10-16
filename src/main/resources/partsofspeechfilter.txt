@@ -1,0 +1,532 @@
+in
+a
+the
+an
+not
+but
+again
+moreover
+to
+and
+together
+with
+also
+then
+likewise
+equally
+first
+second
+third
+uniquely
+similarly
+identically
+correspondingly
+comparatively
+like
+furthermore
+as
+additionally
+too
+notably
+including
+like
+namely
+chiefly
+truly
+indeed
+certainly
+surely
+markedly
+especially
+frequently
+ide
+specifically
+expressively
+surprisingly
+significantly
+for
+thus
+therefore
+thereupon
+consequently
+then
+forthwith
+henceforth
+hence
+accordingly
+but
+although
+still
+instead
+unlike
+whereas
+or
+despite
+for
+and
+nor
+but
+yet
+so
+conversely
+albeit
+however
+besides
+rather
+while
+otherwise
+nevertheless
+nonetheless
+regardless
+notwithstanding
+unless
+when
+whenever
+since
+lest
+here
+further
+next
+nearby
+where
+wherever
+from
+around
+over
+before
+near
+alongside
+above
+amid
+below
+among
+down
+beneath
+up
+beside
+under
+behind
+between
+across
+after
+henceforth
+later
+whenever
+last
+eventually
+until
+meanwhile
+till
+further
+since
+during
+then
+before
+hence
+forthwith
+once
+about
+now
+immediately
+formerly
+instantly
+quickly
+suddenly
+presently
+finally
+shortly
+occasionally
+which
+before
+whereas
+whichever
+straightaway
+what
+overall
+usually
+though
+although
+whoever
+since
+whether
+whatever
+ordinarily
+whom
+till
+while
+whomever
+until
+whose
+if
+unless
+until
+how
+because
+why
+lest
+altogether
+fewer
+fewest
+every
+most
+that
+little
+half
+much
+the
+another
+other
+her
+my
+their
+his
+neither
+these
+all
+its
+no
+this
+any
+one
+two
+three
+those
+both
+least
+our
+what
+each
+less
+several
+which
+either
+many
+some
+whose
+enough
+more
+such
+your
+aboard
+about
+above
+across
+after
+against
+along
+alongside
+amid
+amidst
+among
+amongst
+anti
+around
+as
+astride
+at
+atop
+bar
+barring
+before
+behind
+below
+beneath
+beside
+besides
+between
+beyond
+but
+by
+circa
+concerning
+considering
+counting
+cum
+despite
+down
+during
+except
+excepting
+excluding
+following
+for
+from
+given
+gone
+in
+including
+inside
+into
+less
+like
+minus
+near
+notwithstanding
+of
+off
+on
+onto
+opposite
+outside
+over
+past
+pending
+per
+plus
+pro
+re
+regarding
+respecting
+round
+save
+saving
+since
+than
+through
+throughout
+till
+to
+touching
+towards
+toward
+under
+underneath
+unlike
+until
+up
+upon
+versus
+via
+with
+within
+without
+worth
+in the first place
+as well as
+as a matter of fact
+in like manner
+of course
+in addition
+coupled with
+in the same fashion
+in the same way
+in the light of
+not to mention
+to say nothing of
+equally important
+by the same token
+in other words
+in fact
+to put it differently
+in general
+for one thing
+in particular
+as an illustration
+to be sure
+in detail
+in this case
+to demonstrate
+for this reason
+to emphasize
+to put it another way
+to repeat
+that is to say
+to clarify
+with attention to
+to explain
+by all means
+to enumerate
+important to realize
+such as
+another key point
+for example
+first thing to remember
+for instance
+most compelling evidence
+to point out
+must be remembered
+with this in mind
+point often overlooked
+on the negative side
+on the positives
+as a result
+under those circumstances
+in that case
+because the
+for this reason
+although this may be true
+in contrast
+and still
+different from
+of course
+on the other hand
+and yet
+on the contrary
+at the same time
+in spite of
+even so
+though as much as
+be that as it may
+even though
+then again
+above all
+in reality
+after all
+in the event that
+if in case
+as long as
+so long as
+given that
+on condition
+on the condition
+on condition that
+on the condition that
+only if
+even if
+for the purpose of
+so that
+with this intention
+so as to
+with this in mind
+owing to
+in the hope that
+due to
+to the end that
+for fear that
+because of
+inasmuch as
+in order to
+seeing that since
+being that since
+in view of
+in the middle
+to the left there beyond
+to the right there beyond
+in front of
+on this side
+in the distance
+here and there
+in the foreground
+in the background
+in the center of
+adjacent to
+opposite to
+at the present time
+from time to time
+sooner or later
+at the same time
+up to the present time
+to begin with
+in due time
+until now
+in time
+as soon as
+prior to
+as long as
+in the meantime
+in a moment
+without delay
+by the time
+in the first place
+all of a sudden
+at this instant
+now that
+as can be seen
+after all
+generally speaking
+in fact
+in the final analysis
+in summary
+all things considered
+in conclusion
+by and large
+as shown above
+in short
+to sum up
+in the long run
+in brief
+on the whole
+given these points
+in essence
+in any event
+as has been noted
+to summarize
+in either case
+in a word
+on balance
+all in all
+for the most part
+rather than
+as long as
+as soon as
+as much as
+by the time
+now that
+even though
+only if
+provided that
+as though
+assuming that
+as if
+so that
+even if
+in order
+in order that
+in case
+in case that
+according to
+ahead of
+a la
+along with
+apart from
+as for
+aside from
+as per
+as to
+as well as
+away from
+because of
+but for
+by means of
+close to
+contrary to
+depending on
+due to
+except for
+forward of
+further to
+in addition to
+in between
+in case of
+in face of
+in favor of
+in favour of
+in front of
+in lieu of
+in spit of
+instead of
+in view of
+near to
+next to
+on account of
+on behalf of
+on board
+on to
+on top of
+opposite to
+other than
+out of
+outside of
+owing to
+prepartory to
+prior to
+regardless of
+save for
+thanks to
+together with
+up against
+up to
+up until
+vis-a-vis
+with reference to
+with regard to
