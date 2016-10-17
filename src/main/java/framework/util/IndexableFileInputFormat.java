@@ -1,4 +1,3 @@
-package framework.util;
 /*
  * Cloud9: A MapReduce Library for Hadoop
  * 
@@ -15,6 +14,7 @@ package framework.util;
  * permissions and limitations under the License.
  */
 
+package framework.util;
 
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 

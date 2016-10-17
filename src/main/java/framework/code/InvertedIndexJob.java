@@ -1,10 +1,10 @@
 package framework.code;
 
-import edu.umd.cloud9.collection.wikipedia.WikipediaPageInputFormat;
 import framework.code.articles.GetArticlesMapred;
 import framework.code.inverted.InvertedIndexMapred;
 import framework.code.lemma.LemmaIndexMapred;
 import framework.util.StringIntegerList;
+import framework.util.WikipediaPageInputFormat;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
