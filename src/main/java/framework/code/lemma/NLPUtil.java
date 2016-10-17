@@ -29,12 +29,9 @@ public class NLPUtil {
 		pipeline = new StanfordCoreNLP(props);
 	}
 
-	public List<String> tokenize(String text) {
+	public Map<String, Integer> tokenize(String text) {
 
 		List<String> wordsList = new ArrayList<>();
-
-// read some text in the text variable
-//		String text = "Buffalo buffalo buffalo buffalo. I ran to the super market";
 
 // create an empty Annotation just with the given text
 		Annotation document = new Annotation(text);
@@ -48,33 +45,13 @@ public class NLPUtil {
 		List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
 
 		for (CoreMap sentence : sentences) {
-			// traversing the words in the current sentence
 			// a CoreLabel is a CoreMap with additional token-specific methods
 			for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
-				// this is the text of the token
-				String word = token.get(CoreAnnotations.TextAnnotation.class);
-				// this is the POS tag of the token
 				String lemma = token.get(CoreAnnotations.LemmaAnnotation.class);
 				wordsList.add(lemma.toLowerCase());
-				// this is the NER label of the token
-				String ne = token.get(CoreAnnotations.NamedEntityTagAnnotation.class);
 			}
-
-			// this is the parse tree of the current sentence
-			Tree tree = sentence.get(TreeCoreAnnotations.TreeAnnotation.class);
-
-			// this is the Stanford dependency graph of the current sentence
-			SemanticGraph dependencies = sentence.get(SemanticGraphCoreAnnotations.CollapsedCCProcessedDependenciesAnnotation.class);
 		}
-
-// This is the coreference link graph
-// Each chain stores a set of mentions that link to each other,
-// along with a method for getting the most representative mention
-// Both sentence and token offsets start at 1!
-
-		Map<Integer, CorefChain> graph = document.get(CorefCoreAnnotations.CorefChainAnnotation.class);
-
-		return wordsList;
+		return getWordCount(pruneList(wordsList));
 	}
 
 	public List<String> pruneList(List<String> toPruneList) {
@@ -90,16 +67,19 @@ public class NLPUtil {
 			stopCounter = 1;
 			builder.append(toPruneList.get(i)).append(" ");
 			String curr = builder.toString().trim();
-			if(!wordsToRemove.contains(curr)) {
+			//Contains stop word
+			if(wordsToRemove.contains(curr)) {
 				int j = i+1;
 				while(j < toPruneList.size() && stopCounter!= longestPhraseEncountered) {
 					builder.append(toPruneList.get(j)).append(" ");
 					String subCurr = builder.toString().trim();
 					if (wordsToRemove.contains(subCurr)) {
 						i=j;
+						stopCounter++;
 						continue;
+					} else {
+						break;
 					}
-					stopCounter++;
 				}
 			} else {
 				//Word is not a stop word
@@ -107,7 +87,6 @@ public class NLPUtil {
 			}
 		}
 		return finalWordsList;
-
 	}
 
 

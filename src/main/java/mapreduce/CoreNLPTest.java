@@ -35,7 +35,7 @@ public class CoreNLPTest {
 
 
 // read some text in the text variable
-        String text = "Buffalo buffalo buffalo buffalo. I ran to the super market";
+        String text = "Buffalo buffalo buffalo buffalo. I ran    to the super market";
 
 // create an empty Annotation just with the given text
         Annotation document = new Annotation(text);
@@ -58,6 +58,7 @@ public class CoreNLPTest {
                 // this is the POS tag of the token
                 String pos = token.get(CoreAnnotations.PartOfSpeechAnnotation.class);
                 String lemma = token.get(CoreAnnotations.LemmaAnnotation.class);
+                System.out.println(lemma);
                 // this is the NER label of the token
                 String ne = token.get(CoreAnnotations.NamedEntityTagAnnotation.class);
             }

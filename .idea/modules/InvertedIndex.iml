@@ -16,7 +16,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.apache.hadoop:hadoop-client:2.3.0" level="project" />
     <orderEntry type="library" name="Gradle: info.bliki.wiki:bliki-core:3.0.19" level="project" />
-    <orderEntry type="library" name="Gradle: edu.stanford.nlp:stanford-corenlp:3.6.0:models-english" level="project" />
     <orderEntry type="library" name="Gradle: com.jamesmurty.utils:java-xmlbuilder:0.4" level="project" />
     <orderEntry type="library" name="Gradle: com.jcraft:jsch:0.1.42" level="project" />
     <orderEntry type="library" name="Gradle: net.java.dev.jets3t:jets3t:0.9.0" level="project" />
@@ -79,16 +78,16 @@
     <orderEntry type="library" name="Gradle: jline:jline:0.9.94" level="project" />
     <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.6" level="project" />
     <orderEntry type="library" name="Gradle: com.io7m.xom:xom:1.2.10" level="project" />
-    <orderEntry type="library" name="Gradle: joda-time:joda-time:2.9" level="project" />
     <orderEntry type="library" name="Gradle: de.jollyday:jollyday:0.4.7" level="project" />
     <orderEntry type="library" name="Gradle: com.googlecode.efficient-java-matrix-library:ejml:0.23" level="project" />
     <orderEntry type="library" name="Gradle: javax.json:javax.json-api:1.0" level="project" />
     <orderEntry type="library" name="Gradle: xerces:xercesImpl:2.8.0" level="project" />
     <orderEntry type="library" name="Gradle: xalan:xalan:2.7.0" level="project" />
     <orderEntry type="library" name="Gradle: javax.xml.bind:jaxb-api:2.2.7" level="project" />
-    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.12" level="project" />
     <orderEntry type="library" name="Gradle: xml-apis:xml-apis:2.0.2" level="project" />
-    <orderEntry type="library" name="Gradle: edu.stanford.nlp:stanford-corenlp:3.6.0" level="project" />
+    <orderEntry type="library" name="Gradle: edu.stanford.nlp:stanford-corenlp:3.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: joda-time:joda-time:2.1" level="project" />
+    <orderEntry type="library" name="Gradle: edu.stanford.nlp:stanford-corenlp:3.4.1:models" level="project" />
     <orderEntry type="library" name="Gradle: edu.umd:cloud9:2.0.0" level="project" />
     <orderEntry type="library" name="Gradle: net.sf.jung:jung-api:2.0.1" level="project" />
     <orderEntry type="library" name="Gradle: net.sf.jung:jung-algorithms:2.0.1" level="project" />
@@ -106,6 +105,7 @@
     <orderEntry type="library" name="Gradle: com.martiansoftware:jsap:2.1" level="project" />
     <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.1.2" level="project" />
     <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.7" level="project" />
     <orderEntry type="library" name="Gradle: com.google.guava:guava:18.0" level="project" />
     <orderEntry type="library" name="Gradle: commons-configuration:commons-configuration:1.8" level="project" />
     <orderEntry type="library" name="Gradle: commons-collections:commons-collections:20040616" level="project" />

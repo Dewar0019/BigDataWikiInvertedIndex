@@ -2,7 +2,7 @@
 apply plugin: 'java'
 
 
-sourceCompatibility =  1.8
+sourceCompatibility =  1.7
 
 repositories {
     mavenCentral()
@@ -14,8 +14,8 @@ dependencies {
     compile group: 'org.apache.hadoop', name: 'hadoop-client', version: '2.3.0'
     compile group: 'edu.umd', name: 'cloud9', version: '2.0.0'
     compile group: 'info.bliki.wiki', name: 'bliki-core', version: '3.0.19'
-    compile group: 'edu.stanford.nlp', name: 'stanford-corenlp', version: '3.6.0', classifier: 'models-english'
-    compile group: 'edu.stanford.nlp', name: 'stanford-corenlp', version: '3.6.0'
+    compile group: 'edu.stanford.nlp', name: 'stanford-corenlp', version: '3.4.1', classifier: 'models'
+    compile group: 'edu.stanford.nlp', name: 'stanford-corenlp', version: '3.4.1'
 }
 
 

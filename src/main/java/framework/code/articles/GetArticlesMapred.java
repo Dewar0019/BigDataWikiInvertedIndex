@@ -34,12 +34,12 @@ public class GetArticlesMapred {
 	 */
 	//@formatter:on
 	public static class GetArticlesMapper extends Mapper<LongWritable, WikipediaPage, Text, Text> {
-		public static Set<String> peopleArticlesTitles = new HashSet<String>();
+		public static Set<String> peopleArticlesTitles = new HashSet<>();
 		private Text title = new Text();
 		private Text contents = new Text();
 
 		@Override
-		protected void setup(Mapper<LongWritable, WikipediaPage, Text, Text>.Context context) throws IOException, InterruptedException {
+		protected void setup(Context context) throws IOException, InterruptedException {
 			super.setup(context);
 			Configuration conf = context.getConfiguration();
 
@@ -90,13 +90,11 @@ public class GetArticlesMapred {
 		}
 		@Override
 		public void map(LongWritable offset, WikipediaPage inputPage, Context context) throws IOException, InterruptedException {
-			// TODO: You should implement getting article mapper here
 			String wikiTitle= inputPage.getTitle().toLowerCase();
-//			String[] splitString = title.split("\\s+(?=[^\\])}]*([\\[({]|$))");
-
 			if(peopleArticlesTitles.contains(wikiTitle)) {
 				title.set(wikiTitle);
-				contents.set(inputPage.getContent());
+				//Keep all letters and accented characters, remove everything else and trim whitespace
+				contents.set(inputPage.getContent().replaceAll("[^A-Za-z\\p{L}\\s]", "").toLowerCase().trim());
 				context.write(title, contents);
 			}
 		}

@@ -11,8 +11,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -60,12 +58,7 @@ public class LemmaIndexMapred {
 
         @Override
         public void map(Text title, Text contents, Context context) throws IOException, InterruptedException {
-            List<String> intermediateString = tokenizer.tokenize(contents.toString());
-            List<String> finalString = tokenizer.pruneList(intermediateString);
-            Map<String, Integer> map = tokenizer.getWordCount(finalString);
-            context.write(title, new StringIntegerList(map));
-
-
+            context.write(title, new StringIntegerList(tokenizer.tokenize(contents.toString())));
         }
     }
 }
