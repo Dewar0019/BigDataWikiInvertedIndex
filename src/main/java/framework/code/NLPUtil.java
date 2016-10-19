@@ -1,43 +1,42 @@
-package framework.code.lemma;
+package framework.code;
 
-import edu.stanford.nlp.dcoref.CorefChain;
-import edu.stanford.nlp.dcoref.CorefCoreAnnotations;
+
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.semgraph.SemanticGraph;
-import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations;
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.TreeCoreAnnotations;
 import edu.stanford.nlp.util.CoreMap;
 
 import java.util.*;
 
 public class NLPUtil {
 
-	private StanfordCoreNLP pipeline;
+
 	private Set<String> wordsToRemove;
 	private int longestPhraseEncountered;
-
+	private StanfordCoreNLP pipeline;
 
 	public NLPUtil(Set<String> wordsToRemove, int longestPhraseEncountered) {
 		this.wordsToRemove = wordsToRemove;
 		this.longestPhraseEncountered = longestPhraseEncountered;
 		Properties props = new Properties();
-		props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
-		pipeline = new StanfordCoreNLP(props);
+		props.setProperty("annotators", "tokenize, ssplit, pos, lemma, parse");
+		this.pipeline = new StanfordCoreNLP(props);
+
 	}
 
 	public Map<String, Integer> tokenize(String text) {
+		text = text.replaceAll("[^A-Za-z\\p{L}\\s]", "")
+				.replaceAll("\\s+", " ")
+				.replaceAll("\\b\\w{1,2}\\b\\s?\n", "").toLowerCase();
 
-		List<String> wordsList = new ArrayList<>();
+		List<String> wordsList = new LinkedList<>();
 
 // create an empty Annotation just with the given text
 		Annotation document = new Annotation(text);
 
 // run all Annotators on this text
-		pipeline.annotate(document);
+		this.pipeline.annotate(document);
 
 
 		// these are all the sentences in this document
@@ -47,8 +46,10 @@ public class NLPUtil {
 		for (CoreMap sentence : sentences) {
 			// a CoreLabel is a CoreMap with additional token-specific methods
 			for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
-				String lemma = token.get(CoreAnnotations.LemmaAnnotation.class);
-				wordsList.add(lemma.toLowerCase());
+				String toAdd = token.get(CoreAnnotations.LemmaAnnotation.class);
+				if(toAdd.length() > 1) {
+					wordsList.add(toAdd);
+				}
 			}
 		}
 		return getWordCount(pruneList(wordsList));
